@@ -1,0 +1,99 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   'bootstrap@4.0.0-alpha.6',
+1 verbose cli   '–save' ]
+2 info using npm@3.10.8
+3 info using node@v6.9.1
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly fetchPackageMetaData bootstrap@4.0.0-alpha.6
+8 silly fetchPackageMetaData –save
+9 silly fetchNamedPackageData bootstrap
+10 silly mapToRegistry name bootstrap
+11 silly mapToRegistry using default registry
+12 silly mapToRegistry registry https://registry.npmjs.org/
+13 silly mapToRegistry data Result {
+13 silly mapToRegistry   raw: 'bootstrap',
+13 silly mapToRegistry   scope: null,
+13 silly mapToRegistry   escapedName: 'bootstrap',
+13 silly mapToRegistry   name: 'bootstrap',
+13 silly mapToRegistry   rawSpec: '',
+13 silly mapToRegistry   spec: 'latest',
+13 silly mapToRegistry   type: 'tag' }
+14 silly mapToRegistry uri https://registry.npmjs.org/bootstrap
+15 silly fetchOtherPackageData –save
+16 silly cache add args [ '–save', null ]
+17 verbose cache add spec –save
+18 verbose request uri https://registry.npmjs.org/bootstrap
+19 verbose request no auth needed
+20 info attempt registry request try #1 at 19:58:56
+21 verbose request id 92f3dd75382a5c6c
+22 http request GET https://registry.npmjs.org/bootstrap
+23 info retry will retry, error on last attempt: TypeError: The header content contains invalid characters
+24 silly cache add parsed spec Result {
+24 silly cache add   raw: '–save',
+24 silly cache add   scope: null,
+24 silly cache add   escapedName: null,
+24 silly cache add   name: null,
+24 silly cache add   rawSpec: '–save',
+24 silly cache add   spec: 'D:\\projs\\–save',
+24 silly cache add   type: 'local' }
+25 error addLocal Could not install D:\projs\–save
+26 silly fetchPackageMetaData Error: ENOENT: no such file or directory, open 'D:\projs\–save'
+26 silly fetchPackageMetaData     at Error (native)
+26 silly fetchPackageMetaData  error for –save { Error: ENOENT: no such file or directory, open 'D:\projs\–save'
+26 silly fetchPackageMetaData     at Error (native)
+26 silly fetchPackageMetaData   errno: -4058,
+26 silly fetchPackageMetaData   code: 'ENOENT',
+26 silly fetchPackageMetaData   syscall: 'open',
+26 silly fetchPackageMetaData   path: 'D:\\projs\\–save' }
+27 info attempt registry request try #2 at 19:59:06
+28 http request GET https://registry.npmjs.org/bootstrap
+29 info retry will retry, error on last attempt: TypeError: The header content contains invalid characters
+30 info attempt registry request try #3 at 20:00:06
+31 http request GET https://registry.npmjs.org/bootstrap
+32 silly fetchPackageMetaData TypeError: The header content contains invalid characters
+32 silly fetchPackageMetaData     at ClientRequest.OutgoingMessage.setHeader (_http_outgoing.js:358:11)
+32 silly fetchPackageMetaData     at new ClientRequest (_http_client.js:86:14)
+32 silly fetchPackageMetaData     at Object.exports.request (http.js:31:10)
+32 silly fetchPackageMetaData     at Object.exports.request (https.js:199:15)
+32 silly fetchPackageMetaData     at Request.start (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:740:32)
+32 silly fetchPackageMetaData     at Request.end (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:1394:10)
+32 silly fetchPackageMetaData     at end (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:567:14)
+32 silly fetchPackageMetaData     at Immediate.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:581:7)
+32 silly fetchPackageMetaData     at runCallback (timers.js:637:20)
+32 silly fetchPackageMetaData     at tryOnImmediate (timers.js:610:5)
+32 silly fetchPackageMetaData  error for bootstrap@4.0.0-alpha.6 TypeError: The header content contains invalid characters
+32 silly fetchPackageMetaData     at ClientRequest.OutgoingMessage.setHeader (_http_outgoing.js:358:11)
+32 silly fetchPackageMetaData     at new ClientRequest (_http_client.js:86:14)
+32 silly fetchPackageMetaData     at Object.exports.request (http.js:31:10)
+32 silly fetchPackageMetaData     at Object.exports.request (https.js:199:15)
+32 silly fetchPackageMetaData     at Request.start (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:740:32)
+32 silly fetchPackageMetaData     at Request.end (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:1394:10)
+32 silly fetchPackageMetaData     at end (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:567:14)
+32 silly fetchPackageMetaData     at Immediate.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:581:7)
+32 silly fetchPackageMetaData     at runCallback (timers.js:637:20)
+32 silly fetchPackageMetaData     at tryOnImmediate (timers.js:610:5)
+33 silly rollbackFailedOptional Starting
+34 silly rollbackFailedOptional Finishing
+35 silly runTopLevelLifecycles Finishing
+36 silly install printInstalled
+37 verbose stack Error: ENOENT: no such file or directory, open 'D:\projs\–save'
+37 verbose stack     at Error (native)
+38 verbose cwd D:\projs
+39 error Windows_NT 6.3.9600
+40 error argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "bootstrap@4.0.0-alpha.6" "–save"
+41 error node v6.9.1
+42 error npm  v3.10.8
+43 error path D:\projs\–save
+44 error code ENOENT
+45 error errno -4058
+46 error syscall open
+47 error enoent ENOENT: no such file or directory, open 'D:\projs\–save'
+48 error enoent ENOENT: no such file or directory, open 'D:\projs\–save'
+48 error enoent This is most likely not a problem with npm itself
+48 error enoent and is related to npm not being able to find a file.
+49 verbose exit [ -4058, true ]
